@@ -22,7 +22,13 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "admin-lte": "2.3.11",
+    "font-awesome": "4.7.0",
+    "intl": "1.2.5",
+    "jquery": "3.1.1",
+    "reflect-metadata": "0.1.9",
+    "ts-helpers": "1.1.2"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.2",
