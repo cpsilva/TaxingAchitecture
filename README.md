@@ -21,7 +21,7 @@
 
 1. Executar Npm Install na pasta Tax.UserInterface para instalar as dependencias.
 
-2. Executar o comando 'ng serve -aot -o' este comando já ira abrir a interface do sistema no browser.
+2. Apos obter as depedencias executar o comando 'ng serve -aot -o' este comando já ira abrir a interface do sistema no browser.
 
 3. No Visual Studio selecionar o projeto Tax.ApplicationService como Startup Project.
 
