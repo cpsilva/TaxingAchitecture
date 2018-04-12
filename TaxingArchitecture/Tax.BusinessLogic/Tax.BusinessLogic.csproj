@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Tax.ViewModels\Tax.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>
