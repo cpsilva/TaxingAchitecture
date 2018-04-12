@@ -27,7 +27,7 @@
           <div class="col-sm-4 col-xs-6">
             <div class="form-group">
               <label class="control-label required" for="salario"> Salário</label>
-              <input class="form-control" id="salario" name="salario" placeholder="Insira o salário" [(ngModel)]="model.salarioBruto" required>
+              <input class="form-control" id="salario" name="salario" placeholder="Insira o salário" [(ngModel)]="model.salarioBruto" required currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }">
             </div>
           </div>
         </div>

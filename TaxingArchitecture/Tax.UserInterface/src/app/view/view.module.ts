@@ -5,13 +5,15 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    CurrencyMaskModule
   ],
   declarations: [
     IndexComponent,

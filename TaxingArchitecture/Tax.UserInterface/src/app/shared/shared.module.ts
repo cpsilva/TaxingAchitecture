@@ -7,7 +7,7 @@ import { ServicesModule } from './services/services.module';
   imports: [
     CommonModule,
     HttpClientModule,
-    ServicesModule,
+    ServicesModule
   ],
   declarations: [],
   providers: [
