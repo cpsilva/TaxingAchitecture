@@ -15,7 +15,7 @@
 
 ## Camadas:
 
-![Screenshot](https://github.com/cpsilva/TaxingAchitecture/tree/master/Screenshots/1.png)
+![](https://github.com/cpsilva/TaxingAchitecture/blob/master/Screenshots/1.PNG)
 
 ## Execução do Projeto Angular e IIS:
 
