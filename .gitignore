@@ -3,3 +3,11 @@
 ################################################################################
 
 /TaxingArchitecture/.vs/TaxingArchitecture/v15/.suo
+/TaxingArchitecture/.vs/TaxingArchitecture/v15/Server/sqlite3
+/TaxingArchitecture/Tax.ApplicationService/obj/Debug/netcoreapp2.0
+/TaxingArchitecture/Tax.ApplicationService/obj
+/TaxingArchitecture/Tax.BusinessLogic/obj
+/TaxingArchitecture/Tax.DependenceInjection/bin/Debug/netcoreapp2.0
+/TaxingArchitecture/Tax.DependenceInjection/obj
+/TaxingArchitecture/Tax.Domain/obj
+/TaxingArchitecture/Tax.ViewModels/obj
