@@ -4,7 +4,7 @@
 
 * Visual Studio 2017
 * .NET Core 2.0
-* C# 7.2
+* C#
 * ASP.NET Core 2.0
 * Angular 5.2.0
 * Typescript 2.5.3
