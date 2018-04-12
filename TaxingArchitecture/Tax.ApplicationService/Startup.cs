@@ -31,6 +31,7 @@ namespace Tax.ApplicationService
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseExceptionCustom(env);
             app.UseCorsCustom();
             app.UseMvc();
         }

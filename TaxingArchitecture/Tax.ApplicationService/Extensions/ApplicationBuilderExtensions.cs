@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Hosting;
+using Tax.ApplicationService.Middleware;
 
 namespace Tax.ApplicationService.Extensions
 {
@@ -13,6 +15,22 @@ namespace Tax.ApplicationService.Extensions
             }
 
             application.UseCors(CorsPolicy);
+        }
+
+        public static void UseExceptionCustom(this IApplicationBuilder application, IHostingEnvironment environment)
+        {
+            if (environment.IsDevelopment())
+            {
+                application.UseDeveloperExceptionPage();
+                application.UseDatabaseErrorPage();
+            }
+
+            application.UseExceptionMiddleware();
+        }
+
+        public static void UseExceptionMiddleware(this IApplicationBuilder application)
+        {
+            application.UseMiddleware<ExceptionMiddleware>();
         }
     }
 }

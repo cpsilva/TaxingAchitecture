@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
+using Tax.BusinessLogic.Employee;
 
 namespace Tax.DependenceInjection
 {
@@ -28,7 +29,7 @@ namespace Tax.DependenceInjection
         {
             _services = services ?? new ServiceCollection();
 
-            //_services.AddScoped<IFuncionarioBll, FuncionarioBll>();
+            _services.AddScoped<IEmployeeBll, EmployeeBll>();
 
             return _services;
         }

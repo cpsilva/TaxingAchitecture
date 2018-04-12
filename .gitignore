@@ -105,3 +105,4 @@ Thumbs.db
 /TaxingArchitecture/Tax.ApplicationService/bin/Debug/netcoreapp2.0
 /TaxingArchitecture/Tax.CrossCutting/bin/Debug/netcoreapp2.0
 /TaxingArchitecture/Tax.ViewModels/bin/Debug/netcoreapp2.0
+/TaxingArchitecture/Tax.BusinessLogic/bin/Debug/netcoreapp2.0
