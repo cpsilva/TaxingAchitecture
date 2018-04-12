@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
-  content = 'Welcome to Charlie & Dogs!'
 
   constructor(
     private route: ActivatedRoute

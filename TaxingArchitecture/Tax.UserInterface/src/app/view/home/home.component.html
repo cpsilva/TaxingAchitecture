@@ -42,3 +42,24 @@
     </form>
   </section>
 </section>
+<section class="content" *ngIf="isRetorno">
+  <section class="invoice">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="lead">Resultado da consulta:</p>
+      </div>
+      <dl class="col-sm-9 col-xs-12">
+        <dt>Nome do Funcionario:</dt>
+        <dd>{{retorno.nome}}</dd>
+        <dt>E-mail:</dt>
+        <dd>{{retorno.email}}</dd>
+        <dt>Salário Bruto:</dt>
+        <dd>{{retorno.salarioBruto}}</dd>
+        <dt>Valor percentual do imposto aplicado:</dt>
+        <dd>{{retorno.imposto}}</dd>
+        <dt>Salário Liquido:</dt>
+        <dd>{{retorno.salarioLiquido}}</dd>
+      </dl>
+    </div>
+  </section>
+</section>

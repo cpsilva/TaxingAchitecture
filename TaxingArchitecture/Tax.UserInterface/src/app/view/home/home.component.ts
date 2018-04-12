@@ -10,6 +10,8 @@ import { employeeViewModel } from '../../view-model/EmployeeViewModel';
 })
 export class HomeComponent implements OnInit {
   model: employeeViewModel = new employeeViewModel();
+  retorno: employeeViewModel = new employeeViewModel();
+  isRetorno: boolean = false;
 
   @ViewChild('formulario') formulario;
 
@@ -25,6 +27,8 @@ export class HomeComponent implements OnInit {
     if (!this.validationService.form('formulario')) { return; }
 
     this.applicationService.get<employeeViewModel>("Employee", this.model).subscribe(result => {
+      this.retorno = result;
+      this.isRetorno = true;
     });
   }
 }

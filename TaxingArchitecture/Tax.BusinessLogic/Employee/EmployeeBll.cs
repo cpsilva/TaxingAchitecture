@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Tax.BusinessLogic.Employee.CalcTaxStrategy;
 using Tax.ViewModels;
 
 namespace Tax.BusinessLogic.Employee
@@ -7,7 +9,25 @@ namespace Tax.BusinessLogic.Employee
     {
         public EmployeeViewModel CalculateTax(EmployeeViewModel employee)
         {
-            throw new NotImplementedException();
+            var funcionario = employee;
+            var strategies = new List<ICalcTaxStrategy>
+            {
+                new CalcTaxFirstStrategy(),
+                new CalcTaxSecondStrategy(),
+                new CalcTaxThirdStrategy(),
+                new CalcTaxFourthStrategy()
+            };
+
+            foreach (var strategy in strategies)
+            {
+                if (!strategy.IsSatisfied(employee.SalarioBruto)) continue;
+                employee = strategy.Calculate(employee.SalarioBruto);
+                employee.Nome = funcionario.Nome;
+                employee.Email = funcionario.Email;
+                break;
+            }
+
+            return employee;
         }
     }
 }
