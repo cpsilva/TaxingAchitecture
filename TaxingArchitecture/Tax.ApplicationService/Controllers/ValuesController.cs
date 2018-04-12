@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Tax.ApplicationService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values

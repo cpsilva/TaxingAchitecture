@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tax.ViewModels", "Tax.ViewM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tax.ApplicationService", "Tax.ApplicationService\Tax.ApplicationService.csproj", "{51E19257-098C-4108-AAEF-CFAA83B26E32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tax.CrossCutting", "Tax.CrossCutting\Tax.CrossCutting.csproj", "{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{51E19257-098C-4108-AAEF-CFAA83B26E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51E19257-098C-4108-AAEF-CFAA83B26E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51E19257-098C-4108-AAEF-CFAA83B26E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

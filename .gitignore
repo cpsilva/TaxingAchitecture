@@ -11,3 +11,7 @@
 /TaxingArchitecture/Tax.DependenceInjection/obj
 /TaxingArchitecture/Tax.Domain/obj
 /TaxingArchitecture/Tax.ViewModels/obj
+/TaxingArchitecture/.vs/config
+/TaxingArchitecture/Tax.ApplicationService/Tax.ApplicationService.csproj.user
+/TaxingArchitecture/Tax.CrossCutting/obj/Debug/netcoreapp2.0
+/TaxingArchitecture/Tax.CrossCutting/obj
