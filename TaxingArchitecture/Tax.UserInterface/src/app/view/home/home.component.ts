@@ -21,8 +21,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  public salvar() {
+  public consultar() {
     if (!this.validationService.form('formulario')) { return; }
-    console.log(this.model);
+
+    this.applicationService.get<employeeViewModel>("Employee", this.model).subscribe(result => {
+    });
   }
 }

@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Tax.CrossCutting\Tax.CrossCutting.csproj" />
     <ProjectReference Include="..\Tax.DependenceInjection\Tax.DependenceInjection.csproj" />
+    <ProjectReference Include="..\Tax.ViewModels\Tax.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
