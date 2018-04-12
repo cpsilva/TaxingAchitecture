@@ -14,7 +14,6 @@ namespace Tax.ApplicationService.Controllers
             _employeeBll = employeeBll;
         }
 
-        // GET
         public EmployeeViewModel Get(EmployeeViewModel employee)
         {
             return _employeeBll.CalculateTax(employee);

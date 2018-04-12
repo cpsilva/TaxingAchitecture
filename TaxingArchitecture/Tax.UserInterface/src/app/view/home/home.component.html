@@ -2,41 +2,43 @@
 <section class="content">
   <section class="invoice">
     <form id="formulario" #formulario="ngForm" ngNativeValidate (ngSubmit)="consultar()">
-      <div class="row">
-        <div class="col-xs-12">
-        </div>
-      </div>
-      <div class="row invoice-info">
-        <div class="col-xs-12">
-          <p class="lead">Dados do Funcionario:</p>
-        </div>
-        <div class="col-sm-4 col-xs-8">
-          <div class="form-group">
-            <label class="control-label required" for="nome"> Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome do funcionário" [(ngModel)]="model.nome" required>
-            <span class="help-block"></span>
+      <fieldset>
+        <div class="row">
+          <div class="col-xs-12">
           </div>
         </div>
-        <div class="col-sm-4 col-xs-8">
-          <div class="form-group">
-            <label class="control-label required" for="email"> E-mail</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Insira o e-mail" [(ngModel)]="model.email" required>
+        <div class="row invoice-info">
+          <div class="col-xs-12">
+            <p class="lead">Dados do Funcionario:</p>
+          </div>
+          <div class="col-sm-4 col-xs-8">
+            <div class="form-group">
+              <label class="control-label required" for="nome"> Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome do funcionário" [(ngModel)]="model.nome" required>
+              <span class="help-block"></span>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-8">
+            <div class="form-group">
+              <label class="control-label required" for="email"> E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Insira o e-mail" [(ngModel)]="model.email" required>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+              <label class="control-label required" for="salario"> Salário</label>
+              <input class="form-control" id="salario" name="salario" placeholder="Insira o salário" [(ngModel)]="model.salarioBruto" required>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-6">
-          <div class="form-group">
-            <label class="control-label required" for="salario"> Salário</label>
-            <input type="text" class="form-control" id="salario" name="salario" placeholder="Insira o salário" [(ngModel)]="model.salarioBruto" required>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-success pull-right" [disabled]="formulario.form.invalid">
+              <i class="fa fa-check"></i> Consultar
+            </button>
           </div>
         </div>
-      </div>
+      </fieldset>
     </form>
-    <div class="row">
-      <div class="col-xs-12">
-        <button type="submit" class="btn btn-success pull-right" (click)="formulario.onSubmit()" [disabled]="formulario.form.invalid">
-          <i class="fa fa-check"></i> Consultar
-        </button>
-      </div>
-    </div>
   </section>
 </section>
