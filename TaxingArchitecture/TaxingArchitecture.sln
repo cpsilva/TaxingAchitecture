@@ -13,6 +13,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tax.ApplicationService", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tax.CrossCutting", "Tax.CrossCutting\Tax.CrossCutting.csproj", "{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Tax.UserInterface", "Tax.UserInterface\", "{ECD3A500-D055-450C-A35B-C1577F805ACD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57963"
+		Debug.AspNetCompiler.PhysicalPath = "Tax.UserInterface\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57963\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57963"
+		Release.AspNetCompiler.PhysicalPath = "Tax.UserInterface\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57963\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57963"
+		SlnRelativePath = "Tax.UserInterface\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +60,10 @@ Global
 		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BA667BC-3856-4BB4-8F7A-C7A00FF7B3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD3A500-D055-450C-A35B-C1577F805ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD3A500-D055-450C-A35B-C1577F805ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD3A500-D055-450C-A35B-C1577F805ACD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD3A500-D055-450C-A35B-C1577F805ACD}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
