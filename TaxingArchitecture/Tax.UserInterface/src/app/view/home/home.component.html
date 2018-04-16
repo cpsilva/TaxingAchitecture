@@ -21,7 +21,7 @@
           <div class="col-sm-4 col-xs-8">
             <div class="form-group">
               <label class="control-label required" for="email"> E-mail</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Insira o e-mail" [(ngModel)]="model.email" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Insira o e-mail" [(ngModel)]="model.email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
             </div>
           </div>
           <div class="col-sm-4 col-xs-6">
