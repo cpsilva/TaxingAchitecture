@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Tax.BusinessLogic.Employee.CalcTaxStrategy;
 using Tax.ViewModels;
 
@@ -20,11 +19,13 @@ namespace Tax.BusinessLogic.Employee
 
             foreach (var strategy in strategies)
             {
-                if (!strategy.IsSatisfied(employee.SalarioBruto)) continue;
-                employee = strategy.Calculate(employee.SalarioBruto);
-                employee.Nome = funcionario.Nome;
-                employee.Email = funcionario.Email;
-                break;
+                if (strategy.IsSatisfied(employee.SalarioBruto))
+                {
+                    employee = strategy.Calculate(employee.SalarioBruto);
+                    employee.Nome = funcionario.Nome;
+                    employee.Email = funcionario.Email;
+                    break;
+                }
             }
 
             return employee;

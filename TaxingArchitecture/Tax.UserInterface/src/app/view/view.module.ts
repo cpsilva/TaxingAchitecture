@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -18,6 +18,6 @@ import { CurrencyMaskModule } from "ng2-currency-mask";
   declarations: [
     IndexComponent,
     HomeComponent,
-  ]
+  ],
 })
 export class ViewModule { }

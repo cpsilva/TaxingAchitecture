@@ -54,11 +54,11 @@
         <dt>E-mail:</dt>
         <dd>{{retorno.email}}</dd>
         <dt>Salário Bruto:</dt>
-        <dd>{{retorno.salarioBruto}}</dd>
+        <dd>{{retorno.salarioBruto | currency:'BRL'}}</dd>
         <dt>Valor percentual do imposto aplicado:</dt>
-        <dd>{{retorno.imposto}}</dd>
+        <dd>{{retorno.imposto}}%</dd>
         <dt>Salário Liquido:</dt>
-        <dd>{{retorno.salarioLiquido}}</dd>
+        <dd>{{retorno.salarioLiquido | currency:'BRL'}}</dd>
       </dl>
     </div>
   </section>
