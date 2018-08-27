@@ -1,5 +1,8 @@
 # TaxingArchitecture
 
+## Análise de Código
+[![CodeFactor](https://www.codefactor.io/repository/github/cpsilva/taxingachitecture/badge)](https://www.codefactor.io/repository/github/cpsilva/taxingachitecture)
+
 ## Tecnologias Utilizadas:
 
 * Visual Studio 2017
